@@ -1,24 +1,50 @@
-# README
+# Caramel on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uma aplicação Rails para gerenciar e mostrar nossos queridos caramelos de rua (vira-latas).
 
-Things you may want to cover:
+## Requisitos
 
-* Ruby version
+- Ruby 3.4.7
+- Rails 8.0+
+- SQLite3
 
-* System dependencies
+## Instruções de Configuração
 
-* Configuration
+### 1. Clone o repositório
 
-* Database creation
+```bash
+git clone https://github.com/beatrizmitre/caramel_on_rails.git
+cd caramel_on_rails
+```
 
-* Database initialization
+### 2. Instale as dependências
 
-* How to run the test suite
+```bash
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 3. Configure o banco de dados
 
-* Deployment instructions
+```bash
+bin/rails db:create
+bin/rails db:migrate
+bin/rails db:seed
+```
 
-* ...
+O comando seed irá popular o banco de dados com nossos caramelos: Bambino, Paçoca, Rogerinho, Faxina e Pix.
+
+### 4. Inicie o servidor de desenvolvimento
+
+```bash
+bin/dev
+```
+
+A aplicação estará disponível em `http://localhost:3000`
+
+## Funcionalidades
+
+- Visualizar todos os caramelos
+- Adicionar novos caramelos
+- Editar informações dos caramelos
+- Ver histórias individuais dos caramelos
+- Acompanhar a intensidade do olhar julgador (muito importante!)
