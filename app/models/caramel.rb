@@ -1,0 +1,3 @@
+class Caramel < ApplicationRecord
+end
+

@@ -1,0 +1,2 @@
+module CaramelsHelper
+end

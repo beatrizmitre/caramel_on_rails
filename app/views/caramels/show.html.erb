@@ -1,0 +1,12 @@
+<h1><%= @caramel.name %></h1>
+
+<p>Adopted: <%= @caramel.adopted %></p>
+<p>Judgemental Stare Intensity: <%= @caramel.judgemental_stare_intensity %></p>
+<p>Found At: <%= @caramel.found_at %></p>
+<p>Story: <%= @caramel.story %></p>
+
+<p>
+  <%= link_to "Edit", edit_caramel_path(@caramel) %> |
+  <%= link_to "Delete", caramel_path(@caramel) %> |
+  <%= link_to "Back to all caramels", caramels_path %>
+</p>

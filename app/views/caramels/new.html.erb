@@ -1,0 +1,34 @@
+<h1>New Caramel</h1>
+
+<%= form_with model: @caramel do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :adopted %>
+    <%= form.check_box :adopted %>
+  </div>
+
+  <div>
+    <%= form.label :judgemental_stare_intensity %>
+    <%= form.number_field :judgemental_stare_intensity %>
+  </div>
+
+  <div>
+    <%= form.label :found_at %>
+    <%= form.text_field :found_at %>
+  </div>
+
+  <div>
+    <%= form.label :story %>
+    <%= form.text_area :story %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<p><%= link_to "Back to all caramels", caramels_path %></p>
